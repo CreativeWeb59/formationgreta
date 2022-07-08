@@ -1,0 +1,146 @@
+/* ./resources/css/app.css */
+
+:root{
+
+    --color-black: rgb(40, 40, 40);
+    --color-blue: rgb(56,134,194);
+    --color-green: #87BA37;
+    --color-blue: rgb(94, 176, 240);
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header{
+    /*background: var(--color-black);*/
+    background: black;
+}
+
+footer{
+    /*background: var(--color-black);*/
+    background: black;
+}
+
+.form {
+    @apply w-full max-w-sm mx-auto rounded-lg border shadow-md p-5 mb-5 bg-white drop-shadow-lg;
+}
+
+.label {
+    @apply block font-semibold text-gray-700 mb-2;
+}
+
+.input {
+    @apply shadow border rounded w-full p-2;
+}
+.input:focus {
+    outline: solid 1px var(--color-blue);
+}
+
+.textarea {
+    @apply shadow border rounded resize-none;
+}
+
+.btn {
+    background: var(--color-green);
+    @apply text-white transition ease-in-out duration-500 rounded-md shadow-md block px-4 py-2 mt-3 text-2xl border;
+}
+
+.btn:hover {
+    background: var(--color-blue);
+    @apply text-white border;
+}
+
+.btn2 {
+    background: var(--color-blue);
+    @apply text-white transition ease-in-out duration-500 rounded-md shadow-md block px-4 py-2 mt-8 text-2xl border;
+}
+
+.btn2:hover {
+    background: var(--color-green);
+    @apply text-white;
+}
+
+.link1 {
+    @apply text-xl text-white;
+}
+
+.link1:hover {
+    color:var(--color-green);
+    @apply text-xl;
+}
+
+.link2 {
+    color: var(--color-blue);
+    @apply text-xl;
+}
+
+.link2:hover {
+    color:var(--color-green);
+    @apply text-xl;
+}
+
+h1 {
+    font-family: 'Marck Script', cursive;
+    color:var(--color-blue);
+}
+
+h2 {
+    color:var(--color-blue);
+    @apply text-center text-5xl my-8;
+}
+
+
+.h2 {
+    @apply text-white font-bold my-0;
+    text-shadow: 2px 2px 0 var(--color-black), 2px -2px 0 var(--color-black), -2px 2px 0 var(--color-black), -2px -2px 0 var(--color-black), 2px 0px 0 var(--color-black), 0px 2px 0 var(--color-black), -2px 0px 0 var(--color-black), 0px -2px 0 var(--color-black);
+}
+
+h3 {
+    color:var(--color-green);
+    text-shadow: 2px 2px 0 var(--color-black), 2px -2px 0 var(--color-black), -2px 2px 0 var(--color-black), -2px -2px 0 var(--color-black), 2px 0px 0 var(--color-black), 0px 2px 0 var(--color-black), -2px 0px 0 var(--color-black), 0px -2px 0 var(--color-black);
+    @apply text-center text-3xl tracking-widest;
+}
+
+/* Animation opacite */
+
+.anim-opacite {
+    -webkit-animation: 4s ease 0s normal forwards 1 fadein;
+    animation: 4s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    30% { opacity:0.4; }
+    50% { opacity:0.6; }
+    80% { opacity:0.8; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    30% { opacity:0.4; }
+    50% { opacity:0.6; }
+    80% { opacity:0.8; }
+    100% { opacity:1; }
+}
+
+
+/* Classe du tableau */
+
+.tab-entete{
+    background: var(--color-black);
+    @apply border-2 font-bold h-12 text-white text-xl;
+    @apply flex justify-center content-center items-center;
+}
+
+.tab-tout-liste{
+    background: linear-gradient(160deg, var(--color-blue) 40%, rgb(112, 187, 245));
+}
+
+.tab-liste{
+    /*background: var(--color-green);*/
+    color: var(--color-black);
+    @apply border-2 font-bold h-10 pt-1 ;
+}
